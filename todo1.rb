@@ -35,18 +35,33 @@ def options
   puts "3.) Complete Todo"
   puts "4.) Exit"
   @answer2 = gets.to_i
+  option_funct
+end
+
+def option_funct
+  case @answer2
+    when 1
+      create_todo
+    when 2
+      delete_todo
+    when 3
+      complete_todo
+    when 4
+      puts "Have a great day!"
+      exit
+  end
 end
 
 def create_todo
-  
+  puts "Created"
 end
 
 def delete_todo
-
+  puts "Deleted"
 end
 
 def complete_todo
-
+  puts "Marked Completed"
 end
 
 greet
