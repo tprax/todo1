@@ -36,7 +36,7 @@ def options
   puts "2.) Delete Todo"
   puts "3.) Complete Todo"
   puts "4.) List Todos"
-  puts "4.) Exit"
+  puts "5.) Exit"
   @answer2 = gets.to_i
   option_funct
 end
@@ -74,7 +74,12 @@ def complete_todo
 end
 
 def list_todo
-  puts "Here are your todos"
+  puts "Here is your list!"
+  puts @todo_array
 end
 
 greet
+
+while @answer2 < 5
+greet
+end
