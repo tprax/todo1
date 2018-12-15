@@ -66,6 +66,7 @@ def create_todo
 end
 
 def delete_todo
+
   puts "Deleted"
 end
 
@@ -81,5 +82,5 @@ end
 greet
 
 while @answer2 < 5
-greet
+greet_action
 end
